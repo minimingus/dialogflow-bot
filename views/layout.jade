@@ -1,0 +1,24 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title You won't know
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")     
+    link(href="https://fonts.googleapis.com/css?family=Alfa+Slab+One", rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    //link(rel='stylesheet', href='/stylesheets/style.css')  
+    script(src="/javascripts/jquery-3.2.1.min.js") 
+    script(src="/javascripts/popper.min.js")
+    script(src="/javascripts/bootstrap.min.js")       
+  body.bg-white.bg-image
+    .row.bg-light
+      .col-md-9
+        h5.float-left.ml-5.pt-3(style="font-family: 'Alfa Slab One', cursive;;font-size: 2.7rem;color: #C137A2;")= title
+      .col-md-3
+        img.mr-4.float-right(src="/img/logo.png", width="40%;")
+    .row      
+      block content
+      

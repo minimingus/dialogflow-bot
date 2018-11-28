@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../../../favicon.ico')
+    title Are you a GPP geek?
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")     
+    link(href="https://fonts.googleapis.com/css?family=Alfa+Slab+One", rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/login.css')  
+    script(src="/javascripts/jquery-3.2.1.min.js")  
+  body.text-center
+    form.form-signin(action="/login", method="post")
+      img.mb-3(src='img/geek.png', alt='', width='72', height='72')
+      h3.mb-5.font-weight-normal(style="font-family: 'Alfa Slab One', cursive;;font-size: 3rem;") GPP Trivia
+      label.sr-only(for='inputEmail') Email address
+      input#inputEmail.form-control.mt-5(type='email', placeholder='Email address', required='', autofocus='', name="email")
+      button.btn.btn-lg.btn-primary.btn-block.mt-3(type='submit') Sign in
+      p.mt-5.mb-3.text-muted © 2018

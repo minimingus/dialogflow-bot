@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../../../favicon.ico')
+    title Are you a GPP geek?
+    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ", crossorigin="anonymous")     
+    link(href="https://fonts.googleapis.com/css?family=Alfa+Slab+One", rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/login.css')  
+    script(src="/javascripts/jquery-3.2.1.min.js")  
+  body.text-center
+    form.form-signin(action="/verify", method="post")
+      img.mb-3(src='img/geek.png', alt='', width='72', height='72')
+      h3.mb-5.font-weight-normal(style="font-family: 'Alfa Slab One', cursive;;font-size: 3rem;") Verify code
+      h6.mb-5.font-weight-normal Verification code was send to : #{email} 
+      label.sr-only(for='inputCode') Verification Code
+      input#inputCode.form-control.mt-5(type='text', placeholder='Verify code', required='', autofocus='', name="code")
+      button.btn.btn-lg.btn-primary.btn-block.mt-3(type='submit') Verify
+      a.btn.btn-link.mt-1(href="/resend") Resend code
+      p.mt-5.mb-3.text-muted © 2018
